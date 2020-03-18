@@ -1,1 +1,1 @@
-curl --header "Content-Type:application/json" --request POST --user admin:redhat --data @create-training-organization.json https://satellite.lab.example.com/katello/api/organizations  | python -m json.tool
+curl -s --header "Content-Type:application/json" --request POST --user admin:redhat --data @create-training-organization.json https://satellite.lab.example.com/katello/api/organizations  | python -m json.tool
